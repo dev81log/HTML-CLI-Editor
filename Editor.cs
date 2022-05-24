@@ -12,7 +12,7 @@ namespace EditorHtml
             Console.ForegroundColor = ConsoleColor.Black;
             Console.Clear();
 
-            Console.WriteLine("Editor Start - Choice");
+            Console.WriteLine("MODE TEXT");
             Console.WriteLine("---------------------");
             Start();
         }
@@ -37,10 +37,15 @@ namespace EditorHtml
             switch (response)
             {
                 case 1: ChoiceSaveFile(file); break;
-                case 2: Console.WriteLine("Exit"); break;
-                default: Console.WriteLine("Dont save file"); break;
+                case 2:
+                    {
+                        Console.Clear();
+                        Environment.Exit(0);
+                        break;
+                    }
+                default:
+                    Show(); break;
             }
-
 
             static void ChoiceSaveFile(StringBuilder file)
             {
@@ -52,7 +57,6 @@ namespace EditorHtml
 
                 Console.WriteLine($"File saved {path} on success");
                 Thread.Sleep(2000);
-
             }
         }
     }

@@ -78,7 +78,7 @@ namespace EditorHtml
         {
             switch (options)
             {
-                case 1: Console.WriteLine("Editor"); break;
+                case 1: Editor.Show(); break;
                 case 2: Console.WriteLine("View"); break;
                 case 0:
                     {
