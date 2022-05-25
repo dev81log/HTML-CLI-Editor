@@ -1,2 +1,2 @@
-first text on editor start
-econd text on editor start
+save editor function on
+ocal save get system OS and post path for folder location on disck local

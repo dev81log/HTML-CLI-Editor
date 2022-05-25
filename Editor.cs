@@ -31,6 +31,7 @@ namespace EditorHtml
             Console.WriteLine("1 - Save");
             Console.WriteLine("2 - Exit");
             Console.WriteLine("-------------------");
+            Viewer.Show(file.ToString());
 
             short response = short.Parse(Console.ReadLine());
 
